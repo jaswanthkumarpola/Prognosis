@@ -281,7 +281,7 @@
             <button type="submit" class="btn">Calculate Risk Score</button>
         </form>
 
-        <!-- Dynamic Results Card -->
+  
         <div id="result" class="result-card">
             <div class="result-header">
                 <div class="result-title" id="resultLabel">--</div>
@@ -344,7 +344,7 @@
 
                 const probaPercent = (data.risk_probability * 100).toFixed(1);
 
-                // Clear base class and assign high (red) or low (green) cleanly
+                
                 if (Number(data.prediction) === 1) {
                     resultDiv.classList.add('high');
                     document.getElementById('riskBadge').textContent = 'High Risk';
